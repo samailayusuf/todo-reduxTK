@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import './App.css';
 import Nav from './components/Nav';
 import Todo from './components/Todo';

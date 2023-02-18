@@ -17,11 +17,7 @@ export const todoSlice = createSlice({
             state.todos = state.todos.filter(el => el.id !== action.payload);
             console.log(action)
         },
-        // changeStatus: (state, action) => {
-        //     const indexOfElem = state.todos.indexOf(action.payload);
-        //     let selectedTodo = state.todos[indexOfElem];
-        //     selectedTodo = {...selectedTodo, completed: !selectedTodo.completed }
-        // }
+        
     }
 })
 

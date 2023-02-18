@@ -1,13 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    todos: [
-        {
-            id: 1,
-            text: 'Todo One',
-            completed: false
-      }
-  ],
+    todos: [],
 }
 
 
@@ -17,9 +11,11 @@ export const todoSlice = createSlice({
     reducers: {
         addTodo: (state, action) => {
             state.todos = [action.payload, ...state.todos]
+            console.log(action)
         },
         removeTodo: (state, action) => {
             state.todos = state.todos.filter(el => el.id !== action.payload);
+            console.log(action)
         },
         // changeStatus: (state, action) => {
         //     const indexOfElem = state.todos.indexOf(action.payload);
